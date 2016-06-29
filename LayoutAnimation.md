@@ -65,16 +65,14 @@
 1． 创建**anim_item.xml** 文件，与**上一种方法的第2 步**相同
 
 2． 在Java文件中添加如下代码：
-
-       Animation anim = 
+       
+	Animation anim = 
 			AnimationUtils.loadAnimation(context, R.anim.anim_item);
 
-       LayoutAnimationController animController =
-						new LayoutAnimationController(anim);
+    LayoutAnimationController lac = new LayoutAnimationController(anim);
 
-       animController.setOrder(LayoutAnimationController.ORDER_NORMAL);
+    lac.setDelay(0.3f);
+    lac.setOrder(LayoutAnimationController.ORDER_NORMAL);
 
-       animController.setDelay(1);
-
- 	   listView.setLayoutAnimation(animController);
+    listView.setLayoutAnimation(lac);
 
