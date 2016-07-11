@@ -11,7 +11,7 @@
 	
 	cd E:/software/day01
 
-	指的是：切换到E盘下的softwa文件夹里的day01文件夹
+	指的是：切换到E盘下的software文件夹里的day01文件夹
 
 2. 输入命令：git init
 
@@ -52,6 +52,8 @@
 7. 提交，运行：git commit -m"版本描述"
 
 8. 推送到远程仓库，运行：git push -u origin master
+	
+	第一次推送，需要加“-u”，以后不用。
 
 ---
 #其它扩展
