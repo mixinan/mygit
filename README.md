@@ -7,23 +7,29 @@
 ---
 
 
-1. 用cd命令切换到当前目录，比如：cd E:/software/day01
+1. 打开Git Bash，也就是刚刚安装的软件。用cd 命令切换到当前目录，比如：
+	
+	cd E:/software/day01
 
-2. 运行git init
+	指的是：切换到E盘下的softwa文件夹里的day01文件夹
+
+2. 输入命令：git init
 
 
 3. 创建SSH Key
 	
-	在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果有，可直接跳到下一步。如果没有，运行：	$ ssh-keygen -t rsa -C "你的邮箱"
+	在用户主目录下（比如 C:\Users\你的用户名），看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa 和id_rsa.pub 这两个文件，如果有，可直接跳到下一步。如果没有，运行：	
+	
+	$ ssh-keygen -t rsa -C "你的邮箱"
 
 	然后一路回车，使用默认值即可。
 
-	如果一切顺利的话，可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
+	如果一切顺利的话，可以在用户主目录里找到.ssh目录，里面有id_rsa 和id_rsa.pub 两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥。
 
 
 	登陆GitHub，打开“Account settings”，“SSH Keys”页面：
 
-	然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
+	然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub 文件的内容：
 
 
 	点“Add Key”，你就应该看到已经添加的Key。
@@ -33,7 +39,7 @@
 
 
 
-4. 在gitHub创建仓库，取个名字（不一定要与本地相同），之后复制其生成的SSH key
+4. 在GitHub创建仓库，取个名字（不一定要与本地相同），之后复制其生成的SSH key
 	
 	例如：
 	 
@@ -41,7 +47,7 @@
 
 5. 运行 git remote add origin git@github.com:mixinan/shareApk.git
 
-6. 添加所有文件到暂存区，运行（注意最后的“.”，表示所有）：git add .
+6. 添加本地所有文件到暂存区，运行（注意最后的“.”，表示所有）：git add .
  
 7. 提交，运行：git commit -m"版本描述"
 
