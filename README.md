@@ -1,4 +1,12 @@
 #流程
+
+首先去[百度云链接](http://pan.baidu.com/s/1skFLrMt#path=%252Fpub%252Fgit)下载可执行文件，安装到电脑上。
+
+再按以下流程操作。它是我根据[别人写的教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137396287703354d8c6c01c904c7d9ff056ae23da865a000)精简的。
+
+---
+
+
 1. 用cd命令切换到当前目录，比如：cd E:/software/day01
 
 2. 运行git init
