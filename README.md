@@ -13,6 +13,7 @@
 
 	指的是：切换到E盘下的software文件夹里的day01文件夹
 
+
 2. 输入命令：git init
 
 	该文件夹下会生成一个.git的隐藏文件
@@ -41,19 +42,26 @@
  
     git remote add origin git@github.com:xxx/xxx.git
 
+
 5. 在Git 命令行窗口运行它
+
 
 6. 为了防止提交内容以后，小方块不变绿（绿块越多，表示提交代码越频繁，有装逼功能），配置一下邮箱和名字，分别运行：
 
     git config user.email "你的邮箱
     
     git config user.name "你的名字"
+    
+    如果还是不变绿，参考[不变绿](http://blog.csdn.net/elloop/article/details/50564858)
 
-6. 添加本地所有文件到暂存区，运行（注意最后的“.”，表示所有）：git add .
+
+7. 添加本地所有文件到暂存区，运行（注意最后的“.”，表示所有）：git add .
  
-7. 提交，运行：git commit -m"版本描述"
 
-8. 推送到远程仓库，运行：git push -u origin master
+8. 提交，运行：git commit -m"版本描述"
+
+
+9. 推送到远程仓库，运行：git push -u origin master
 	
 	第一次推送，需要加“-u”，以后不用。
 
