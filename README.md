@@ -7,7 +7,7 @@
 ---
 
 
-1. 打开Git Bash，也就是刚刚安装的软件。用cd 命令切换到当前目录，比如：
+1. 打开Git Bash，也就是刚刚安装的软件。用cd 命令切换到你要上传至GitHub的文件夹，比如：
 	
 	cd E:/software/day01
 
@@ -15,10 +15,12 @@
 
 2. 输入命令：git init
 
+	该文件夹下会生成一个.git的隐藏文件
+
 
 3. 创建SSH Key
 	
-	在用户主目录下（比如 C:\Users\你的用户名），看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa 和id_rsa.pub 这两个文件，如果有，可直接跳到下一步。如果没有，运行：	
+	在用户主目录下（比如 C:\Users\你的用户名），看看有没有.ssh目录，如果有，看看该目录下有没有id_rsa 和id_rsa.pub 这两个文件，如果有，可直接跳到下一步。如果没有，运行：	
 	
 	$ ssh-keygen -t rsa -C "你的邮箱"
 
@@ -35,17 +37,17 @@
 	点“Add Key”，你就应该看到已经添加的Key。
 
 
+4. 顺便接着上一步，在GitHub创建一个空仓库（取名不一定要与本地相同），在空仓库的页面上找到并复制这一段代码： 
+ 
+    git remote add origin git@github.com:xxx/xxx.git
 
+5. 在Git 命令行窗口运行它
 
+6. 为了防止提交内容以后，小方块不变绿（绿块越多，表示提交代码越频繁，有装逼功能），配置一下邮箱和名字，分别运行：
 
-
-4. 在GitHub创建仓库，取个名字（不一定要与本地相同），之后复制其生成的SSH key
-	
-	例如：
-	 
-	git@github.com:mixinan/shareApk.git
-
-5. 运行 git remote add origin git@github.com:mixinan/shareApk.git
+    git config user.email "你的邮箱
+    
+    git config user.name "你的名字"
 
 6. 添加本地所有文件到暂存区，运行（注意最后的“.”，表示所有）：git add .
  
